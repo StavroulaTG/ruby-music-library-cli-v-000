@@ -5,6 +5,8 @@ class MusicLibraryController
   end
 
   def call
+
+    user_input = ""
     while response != "exit"
 
     puts "Welcome to your music library!"
