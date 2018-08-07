@@ -3,7 +3,6 @@ class MusicImporter
 
   def initialize(path)
     @path = path
-    @files = files
-    files << @path
   end
+
 end
