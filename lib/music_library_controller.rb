@@ -69,7 +69,7 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    user_input = gets.chomp
+    user_input = gets.chomp.to_i
     if (1..Song.all.length).include?(user_input)
       song = Song.all.sort_by(&:name)(user_input)
     end
