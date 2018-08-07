@@ -70,5 +70,6 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     user_input = gets.chomp
+    puts "Playing #{song.artist.name} - #{song.name} - #{song.genre.name}"
   end
 end
