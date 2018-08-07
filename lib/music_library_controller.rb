@@ -66,4 +66,8 @@ class MusicLibraryController
       genre.songs.sort_by(&:name).each.with_index(1) {|song, index| puts "#{index}. #{song.artist.name} - #{song.name}"}
     end
   end
+
+  def play_song
+    puts "Which song number would you like to play?"
+  end
 end
