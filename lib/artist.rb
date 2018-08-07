@@ -31,7 +31,7 @@ class Artist
     @songs << song unless @songs.include?(song)
   end
 
-  def genres
+  def genre
     songs.map {|song| song.genre}.uniq
   end
 
