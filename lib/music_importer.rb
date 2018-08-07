@@ -5,4 +5,8 @@ class MusicImporter
     @path = path
   end
 
+  def files
+    self << path
+  end
+
 end
